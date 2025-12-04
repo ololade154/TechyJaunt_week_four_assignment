@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background-color: hsl(257, 40%, 49%);
+  --hover-color: hsl(300, 69%, 71%);
+  --font-color: #fff;
+  --poppins: 'Poppins', sans-serif;
+  --open-sans: 'Open Sans', sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* WRAPPER */
+.wrapper {
+  background-image: url(../images/bg-mobile.svg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.logo > img {
+  height: 30px;
+}
+
+/* NAVIGATION BAR */
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 18px 0px 18px;
+}
+
+/* HERO SECTION */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  padding: 20px 18px 20px 18px;
+}
+
+.hero-image > img {
+  height: 200px;
+}
+
+.hero-content > h1 {
+  font-family: var(--poppins);
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--font-color);
+  margin-bottom: 0.7rem;
+}
+
+.hero-content > p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  font-family: var(--open-sans);
+  color: var(--font-color);
+}
+
+.btn {
+  border: 0;
+  outline: 0;
+  padding: 15px 100px;
+  background-color: var(--font-color);
+  border-radius: 50px;
+  font-size: 15px;
+  cursor: pointer;
+  color: var(--background-color);
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: all 0.9s ease;
+}
+.btn:hover {
+  background-color: var(--hover-color);
+}
+.btn:hover a {
+  color: var(--font-color);
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  padding: 0px 18px 20px 18px;
+  align-items: center;
+  gap: 0.6rem;
+}
+.social-media > div {
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+  color: var(--font-color);
+}
+.social-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.social-media > div:hover {
+  color: var(--hover-color);
+  border-color: var(--hover-color);
+}
+
+/* TABLET / SMALL DESKTOP (650px - 1024px) */
+@media screen and (min-width: 650px) {
+  .navigation-bar {
+    padding: 40px 50px;
+  }
+  .wrapper {
+    background-image: url('../images/bg-desktop.svg');
+    height: 100vh;
+  }
+  .logo > img {
+    height: 40px;
+  }
+  .hero-section {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: start;
+    gap: 50px;
+    padding: 20px 100px 0px 100px;
+  }
+
+  .hero-image > img {
+    height: 400px;
+  }
+  .hero-content {
+    flex: 3;
+  }
+
+  .hero-content > h1 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .hero-content > p {
+    font-size: 19px;
+    font-family: var(--open-sans);
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+    color: var(--font-color);
+  }
+
+  .btn {
+    padding: 15px 80px;
+    transition: all 0.9s ease;
+  }
+
+  .btn:hover {
+    background-color: var(--hover-color);
+  }
+  .btn:hover a {
+    color: var(--font-color);
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 150px 20px 150px;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  .social-media > div {
+    border: 1.5px solid #fff;
+    border-radius: 50%;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    color: var(--font-color);
+  }
+
+  .social-media > div:hover {
+    color: var(--hover-color);
+    border-color: var(--hover-color);
+  }
+  .social-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
