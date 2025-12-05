@@ -26,7 +26,7 @@ img {
   max-width: 100%;
 }
 
-/* WRAPPER */
+/* wrapper */
 .wrapper {
   background-image: url(../images/bg-mobile.svg);
   width: 100%;
@@ -38,7 +38,7 @@ img {
   height: 30px;
 }
 
-/* NAVIGATION BAR */
+/* navigation bar */
 .navigation-bar {
   display: flex;
   justify-content: space-between;
@@ -47,7 +47,7 @@ img {
   padding: 20px 18px 0px 18px;
 }
 
-/* HERO SECTION */
+/* hero section */
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -87,7 +87,7 @@ img {
   font-size: 15px;
   cursor: pointer;
   color: var(--background-color);
-  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.4);
   text-align: center;
   transition: all 0.9s ease;
 }
@@ -125,7 +125,7 @@ img {
   border-color: var(--hover-color);
 }
 
-/* TABLET / SMALL DESKTOP (650px - 1024px) */
+/* tablet / small desktop (650px - 1024px) */
 @media screen and (min-width: 650px) {
   .navigation-bar {
     padding: 40px 50px;
